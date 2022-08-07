@@ -1,0 +1,87 @@
+body
+{
+    margin:0;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    height: 4vh;
+    background-color: aqua;
+    margin:none;
+    border-radius: 0px 0px 10vw 10vw;
+}
+
+.operations{
+    display: flex;
+    height: 15vh;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center ;
+}
+
+.v1, .v2{
+    height: 10vh;
+    width: 30vw;
+    background-color: red;
+    font-size: 150%;
+}
+
+
+.opr{
+    height: 5vh;
+    width: 10vw;
+    background-color: greenyellow;
+    font-size: 250%;
+    text-align: center;
+
+}
+
+.resultcontainter{
+    display: flex;
+    justify-content: center;
+    height: 15vh;
+}
+.result{
+    width: 90%;
+    height: 10vh;
+    background-color: aqua;
+    font-size: 150%;
+    
+}
+
+.keypad{
+    width: 100%;
+    background-color: antiquewhite;
+    border-radius: 10vw 10vw 0 0;
+    display: flex;
+    justify-content: center;
+    padding: 10% 0%;
+    height: 50vh;
+
+}
+.grid-container{
+    
+    display: grid;
+    width: 90%;
+    background-color: violet;
+    grid-gap: 5px;
+    grid-template-columns: auto auto auto auto;
+    
+
+}
+
+.grid-item{
+
+    background-color: crimson;
+    justify-content: center;
+    align-items: center;
+    font-size: 300%;
+}
+.item17{
+    grid-column: 1 / span 2;
+}
+.item18{
+    grid-column: 3 / span 2;
+}
+
