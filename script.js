@@ -32,21 +32,8 @@ function operator(a)
 function result(){
     a = parseFloat(document.getElementById('v1').value);
     b = parseFloat(document.getElementById('v2').value);
-    c = parseFloat(document.getElementById('res').value);
 
-    console.log(c);
-    console.log(c!=null);
-
-    // if( a!='' && b!='' && c!='' )
-    // {
-    //     document.getElementById('v1').value=document.getElementById('res').value;
-    //     document.getElementById('v2').value = '';
-    //     document.getElementById('res').value = '';
-    // }
-
-    // console.log(a+b);
-   
-    // console.log(document.getElementById('res').value);
+    
 
     if(document.getElementById('opr').value == '+'){
         document.getElementById('res').value = a+b;}
@@ -60,8 +47,5 @@ function result(){
     if(document.getElementById('opr').value == '/'){
         document.getElementById('res').value = a/b;}
 
-    
-
-    
 
 }
