@@ -6,24 +6,26 @@ function selector(a){
 
     id = a;
     console.log(id);
-    document.getElementById(a).style.borderWidth = '5px';
+    document.getElementById(a).style.borderWidth = '2px';
 
 }
 
 function clean(){
     a = document.getElementById("v1").value;
     b = document.getElementById("v2").value;
+    document.getElementById("opr").value='';
     if(a == '' && b=='')
     {
         document.getElementById("res").value = '';
         document.getElementById(id).style.borderWidth = "0px";
         id = '';
+        document.getElementById('history').value = '';
     }
     document.getElementById("v1").value = '';
     document.getElementById("v2").value = '';
     document.getElementById("opr").value='';
     
-    document.getElementById('history').value = '';
+   
 
 
     console.log('work');
@@ -37,7 +39,12 @@ function number(a) {
 
 function operator(a)
 {
- document.getElementById('opr').value= a;
+    x = document.getElementById('v1').value;
+    y = document.getElementById('v2').value;
+    z = document.getElementById('res').value;
+
+    if(z=='')
+    document.getElementById('opr').value= a;
 }
 
 function result(){
@@ -47,6 +54,8 @@ function result(){
     x = document.getElementById('v1').value;
     y = document.getElementById('v2').value;
     z = document.getElementById('res').value;
+    
+    o = document.getElementById('opr').value;
 
     if(x!=''&& y!='' && z!='')
     {
@@ -55,10 +64,10 @@ function result(){
         document.getElementById('v2').value='';
         document.getElementById('res').value='';
         if(h==''){
-        h = h + x + document.getElementById('opr').value + y;}
+        h = h + x + o +  y;}
         else
         {
-        h = h + document.getElementById('opr').value + y;
+        h = '(' + h + ')' + o  + y ;
         }
         document.getElementById('history').value = h;
         console.log('yo');
@@ -67,16 +76,16 @@ function result(){
   
 
     if(document.getElementById('opr').value == '+'){
-        document.getElementById('res').value = a+b;}
+        document.getElementById('res').value = parseFloat(a+b).toFixed(6);}
 
     if(document.getElementById('opr').value == '-'){
-        document.getElementById('res').value = a-b;}
+        document.getElementById('res').value = parseFloat(a-b).toFixed(6)}
 
-    if(document.getElementById('opr').value == 'X'){
-        document.getElementById('res').value = a*b;}
+    if(document.getElementById('opr').value == 'x'){
+        document.getElementById('res').value = parseFloat(a*b).toFixed(6);}
 
     if(document.getElementById('opr').value == '/'){
-        document.getElementById('res').value = a/b;}
+        document.getElementById('res').value = parseFloat(a/b).toFixed(6);}
 
     
 }

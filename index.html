@@ -10,12 +10,12 @@
     </head>
     <body>
         <header>
-            <input class="header" id='history' disabled></input>
+            <input class="header" id='history' readonly></input>
         </header>
         <section class="operations">
-            <input onclick="selector('v1')" type="text" class="v1" id="v1"></input>
-            <input class="opr"type="text" ID="opr"/>
-            <input onclick="selector('v2')" type="text" class="v2" id="v2"></input >
+            <input onclick="selector('v1')" type="text" class="v1" id="v1" readonly></input>
+            <input class="opr"type="text" ID="opr" disabled/>
+            <input onclick="selector('v2')" type="text" class="v2" id="v2" readonly></input >
         </section>
 
         <section class="resultcontainter">
@@ -40,7 +40,7 @@
                 <button onclick="number('8')" class="grid-item item10">8</button>
                 <button onclick="number('9')" class="grid-item item11">9</button>
 
-                <button onclick="operator('X')" class="grid-item item12">X</button>
+                <button onclick="operator('x')" class="grid-item item12">x</button>
 
                 <button onclick="number('2')" class="grid-item item13">N</button>
 
