@@ -8,13 +8,11 @@ header{
     justify-content: center;
     background-color: aqua;
     margin:none;
-    border-radius: 0px 0px 10vw 10vw;
     justify-self: center;
 }
 
-.header{
+.hinput{
     height: 4vh;
-    border-radius: 0px 0px 10vw 10vw;
     width: 100%;
     padding-left: 30px;
     padding-right: 30px;
@@ -31,7 +29,7 @@ header{
     align-items: center ;
 }
 
-.v1, .v2{
+.main{
     height: 10vh;
     width: 30vw;
     background-color: red;

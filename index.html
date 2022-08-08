@@ -9,21 +9,21 @@
         <title>Calculator</title>
     </head>
     <body>
+
         <header>
-            <input class="header" id='history' readonly></input>
+            <input class="hinput" id='history' readonly></input>
         </header>
+
         <section class="operations">
-            <input onclick="selector('v1')" type="text" class="v1" id="v1" readonly></input>
-            <input class="opr"type="text" ID="opr" disabled/>
-            <input onclick="selector('v2')" type="text" class="v2" id="v2" readonly></input >
+            <input onclick="selector('main')" type="text" class="main" id="main" readonly></input>
         </section>
 
-        <section class="resultcontainter">
+        <!-- <section class="resultcontainter">
             <input type="text" class="result" id="res"></input>
-        </section>
+        </section> -->
 
-        <section class="keypad">
             <div class="grid-container">
+
                 <button onclick="number('1')" class="grid-item item1">1</button>
                 <button onclick="number('2')" class="grid-item item2">2</button>
                 <button onclick="number('3')" class="grid-item item3">3</button>
@@ -55,6 +55,5 @@
                 <button onclick="result()" class="grid-item item18">=</button>
 
             </div>
-        </section>
     </body>
     </html>

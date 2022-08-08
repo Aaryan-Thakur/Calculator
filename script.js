@@ -1,7 +1,7 @@
 var id;
 
 function selector(a){
-    document.getElementById('v1').style.borderWidth = "0px";
+    document.getElementById('main').style.borderWidth = "0px";
     document.getElementById('v2').style.borderWidth = "0px";
 
     id = a;
@@ -11,7 +11,7 @@ function selector(a){
 }
 
 function clean(){
-    a = document.getElementById("v1").value;
+    a = document.getElementById("main").value;
     b = document.getElementById("v2").value;
     document.getElementById("opr").value='';
     if(a == '' && b=='')
@@ -21,7 +21,7 @@ function clean(){
         id = '';
         document.getElementById('history').value = '';
     }
-    document.getElementById("v1").value = '';
+    document.getElementById("main").value = '';
     document.getElementById("v2").value = '';
     document.getElementById("opr").value='';
     
@@ -39,7 +39,7 @@ function number(a) {
 
 function operator(a)
 {
-    x = document.getElementById('v1').value;
+    x = document.getElementById('main').value;
     y = document.getElementById('v2').value;
     z = document.getElementById('res').value;
 
@@ -48,10 +48,10 @@ function operator(a)
 }
 
 function result(){
-    a = parseFloat(document.getElementById('v1').value);
+    a = parseFloat(document.getElementById('main').value);
     b = parseFloat(document.getElementById('v2').value);
     c= parseFloat(document.getElementById('res').value);
-    x = document.getElementById('v1').value;
+    x = document.getElementById('main').value;
     y = document.getElementById('v2').value;
     z = document.getElementById('res').value;
     
@@ -60,7 +60,7 @@ function result(){
     if(x!=''&& y!='' && z!='')
     {
         h = document.getElementById('history').value;
-        document.getElementById('v1').value=c;
+        document.getElementById('main').value=c;
         document.getElementById('v2').value='';
         document.getElementById('res').value='';
         if(h==''){
