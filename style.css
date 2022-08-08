@@ -23,7 +23,7 @@ header{
 
 .operations{
     display: flex;
-    height: 15vh;
+    height: 100%;
     width: 100%;
     justify-content: space-around;
     align-items: center ;
@@ -31,7 +31,7 @@ header{
 
 .main{
     height: 10vh;
-    width: 30vw;
+    width: 97%;
     background-color: red;
     font-size: 150%;
     border-width: 0px;
@@ -77,11 +77,11 @@ header{
 .grid-container{
     
     display: grid;
-    width: 90%;
+    width: 100%;
     background-color: violet;
     grid-gap: 5px;
     grid-template-columns: auto auto auto auto;
-    
+
 
 }
 
@@ -91,6 +91,7 @@ header{
     justify-content: center;
     align-items: center;
     font-size: 300%;
+    width: 100%;
 }
 .item17{
     grid-column: 1 / span 2;
