@@ -14,8 +14,6 @@ header{
 .hinput{
     height: 4vh;
     width: 100%;
-    padding-left: 30px;
-    padding-right: 30px;
     font-size: 25px;
 }
 
@@ -30,39 +28,27 @@ header{
 }
 
 .main{
-    height: 10vh;
-    width: 97%;
+    height: 23vh;
+    width: 100%;
     background-color: red;
-    font-size: 150%;
+    font-size: 10vw;
     border-width: 0px;
-
-    /* text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow:hidden; */
+    text-align: right;
+    /* text-overflow: ; */
+    overflow:scroll; 
 }
 
-
-.opr{
-    height: 5vh;
-    width: 10vw;
-    background-color: greenyellow;
-    font-size: 250%;
-    text-align: center;
-
+.main:focus{
+    outline-width: 0
 }
+
 
 .resultcontainter{
     display: flex;
     justify-content: center;
     height: 15vh;
 }
-.result{
-    width: 90%;
-    height: 10vh;
-    background-color: aqua;
-    font-size: 150%;
-    
-}
+
 
 .keypad{
     width: 100%;
@@ -71,7 +57,7 @@ header{
     display: flex;
     justify-content: center;
     padding: 10% 0%;
-    height: 50vh;
+
 
 }
 .grid-container{
@@ -79,8 +65,9 @@ header{
     display: grid;
     width: 100%;
     background-color: violet;
-    grid-gap: 5px;
+    grid-gap: 2px;
     grid-template-columns: auto auto auto auto;
+    height: 61vh;
 
 
 }
@@ -90,12 +77,7 @@ header{
     background-color: crimson;
     justify-content: center;
     align-items: center;
-    font-size: 300%;
+    font-size:  50px;
     width: 100%;
-}
-.item17{
-    grid-column: 1 / span 2;
-}
-.item18{
-    grid-column: 3 / span 2;
+    border: none;
 }
