@@ -1,5 +1,6 @@
 
 
+
 function clean(){
     document.getElementById("main").value='';
 }
@@ -27,53 +28,48 @@ function operator(a)
     document.getElementById('main').value = document.getElementById('main').value + a;}
 }
 
-function result(){
-    a = document.getElementById('main').value;
-    a= a.replaceAll("x", "*");
-    b = Function("return " + a)();
-    document.getElementById('main').value = '';
-    b = Math.round((b + Number.EPSILON) * 100000) / 100000;
+function delay(milliseconds){
+    return new Promise(resolve => {
+        setTimeout(resolve, milliseconds);
+    });
+}
 
-    document.getElementById('main').value = b;
+async function errormessage(){
 
-    // a = parseFloat(document.getElementById('main').value);
-    // b = parseFloat(document.getElementById('v2').value);
-    // c= parseFloat(document.getElementById('res').value);
-    // x = document.getElementById('main').value;
-    // y = document.getElementById('v2').value;
-    // z = document.getElementById('res').value;
+    a = document.getElementById("main").value;
+    b = document.getElementById("main").style.fontSize;
+
+    document.getElementById("main").value='Error: Enter a valid input';
+    document.getElementById("main").style.fontSize='7vw';
+
+    console.log(a);
+    await delay(2000);
+    console.log(a);
     
-    // o = document.getElementById('opr').value;
-
-    // if(x!=''&& y!='' && z!='')
-    // {
-    //     h = document.getElementById('history').value;
-    //     document.getElementById('main').value=c;
-    //     document.getElementById('v2').value='';
-    //     document.getElementById('res').value='';
-    //     if(h==''){
-    //     h = h + x + o +  y;}
-    //     else
-    //     {
-    //     h = '(' + h + ')' + o  + y ;
-    //     }
-    //     document.getElementById('history').value = h;
-    //     console.log('yo');
-    //     return;
-    // }
-  
-
-    // if(document.getElementById('opr').value == '+'){
-    //     document.getElementById('res').value = parseFloat(a+b).toFixed(6);}
-
-    // if(document.getElementById('opr').value == '-'){
-    //     document.getElementById('res').value = parseFloat(a-b).toFixed(6)}
-
-    // if(document.getElementById('opr').value == 'x'){
-    //     document.getElementById('res').value = parseFloat(a*b).toFixed(6);}
-
-    // if(document.getElementById('opr').value == '/'){
-    //     document.getElementById('res').value = parseFloat(a/b).toFixed(6);}
-
+    document.getElementById("main").style.fontSize=b;
+    document.getElementById("main").value = a;
+    
     
 }
+
+function result(){
+    
+    try{
+        a = document.getElementById('main').value;
+        a= a.replaceAll("x", "*");
+        b = Function("return " + a)();
+        document.getElementById('main').value = '';
+        b = Math.round((b + Number.EPSILON) * 100000) / 100000;
+        
+        document.getElementById('main').value = b;
+    }
+    catch{
+        errormessage();
+    }
+}
+
+function backspace(){
+    
+    document.getElementById("main").value = document.getElementById("main").value.slice(0, -1);
+}
+
