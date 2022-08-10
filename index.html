@@ -5,7 +5,6 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
-        <script src="script.js"></script>
         <title>Calculator</title>
     </head>
     <body>
@@ -25,41 +24,41 @@
         <section class="keybad">
             <div class="grid-container">
                 
-                <button onclick="number('2')" class="grid-item item13">N</button>
+                <button class="grid-item" id="NDmode">N</button>
                 
-                <button onclick="clean()" class="grid-item item17">C</button>
+                <button onclick="clean()" class="grid-item" id="clean"></button>
                 
-                <button onclick="number('2')" class="grid-item item15">+-</button>
+                <button onclick="number('2')" class="grid-item" id="sign">+-</button>
                 
                 
-                <button onclick="operator('/')" class="grid-item item16">/</button>
+                <button onclick="operator('/')" class="grid-item" id="division">/</button>
                
                 
-                <button onclick="number('7')" class="grid-item item9">7</button>
-                <button onclick="number('8')" class="grid-item item10">8</button>
-                <button onclick="number('9')" class="grid-item item11">9</button>
+                <button onclick="number('7')" class="grid-item number" id="7">7</button>
+                <button onclick="number('8')" class="grid-item number"id='8'>8</button>
+                <button onclick="number('9')" class="grid-item number"id='9'>9</button>
                 
-                <button onclick="operator('+')" class="grid-item item4">+</button>
+                <button onclick="operator('+')" class="grid-item" id="addition">+</button>
                 
-                <button onclick="number('4')" class="grid-item item5">4</button>
-                <button onclick="number('5')" class="grid-item item6">5</button>
-                <button onclick="number('6')" class="grid-item item7">6</button>
+                <button onclick="number('4')" class="grid-item" id="4">4</button>
+                <button onclick="number('5')" class="grid-item" id="5">5</button>
+                <button onclick="number('6')" class="grid-item" id="6">6</button>
                 
-                <button onclick="operator('-')" class="grid-item item8">-</button>
+                <button onclick="operator('-')" class="grid-item" id="subtraction">-</button>
                 
-                <button onclick="number('1')" class="grid-item item1">1</button>
-                <button onclick="number('2')" class="grid-item item2">2</button>
-                <button onclick="number('3')" class="grid-item item3">3</button>
+                <button onclick="number('1')" class="grid-item" id="1">1</button>
+                <button onclick="number('2')" class="grid-item" id="2">2</button>
+                <button onclick="number('3')" class="grid-item" id="3">3</button>
 
-                <button onclick="operator('x')" class="grid-item item12">x</button>
+                <button onclick="operator('x')" class="grid-item" id="multiplication">x</button>
 
-                <button onclick="number('0')" class="grid-item item14">0</button>
+                <button onclick="number('0')" class="grid-item" id="0">0</button>
                 
-                <button onclick="number('.')" class="grid-item item19">.</button>
+                <button onclick="number('.')" class="grid-item" id="decimal">.</button>
                 
-                <button onclick="backspace()" class="grid-item item20">B</button>
+                <button onclick="backspace()" class="grid-item" id="backspace">B</button>
 
-                <button onclick="result()" class="grid-item item18">=</button>
+                <button onclick="result()" class="grid-item" id="result">=</button>
                 
                 
                 
@@ -68,9 +67,8 @@
         <footer>
             Made by Aaryan
             <br>
-            <a href="https://github.com/Aaryan-Thakur" target="_blank" >click me!</a>
+            <a href="https://github.com/Aaryan-Thakur" target="_blank" ><img src="static/git.png" class='logo' img></a>
         </footer>
     </body>
+    <script src="script.js"></script>
     </html>
-
-    

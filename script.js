@@ -1,3 +1,10 @@
+const numbers = getElementsByClassName('number');
+
+for(let i=0; i < input.length; i++)
+number[i].addEventListener('click',()=>{
+    number='1';
+})
+
 
 
 
@@ -8,7 +15,13 @@ function clean(){
 function number(a) {
     document.getElementById('main').value = document.getElementById('main').value + a;
     
-  } 
+}
+
+// randomv = document.getElementById('n');
+// console.log(randomv);
+// document.getElementById('n').addEventListener('click',()=>{
+//     console.log("N is Clicked");
+// })
 
 
 function operator(a)
