@@ -20,6 +20,7 @@ document.getElementsByClassName('operator')[i].addEventListener('click',()=>{
 
 function clean(){
     document.getElementById("main").value='';
+    document.getElementById("history").value='';     
 }
 
 function number(a) {
@@ -69,14 +70,16 @@ function result(){
     
     try{
         a = document.getElementById('main').value;
+        c = a;
         a= a.replaceAll("x", "*");
         b = Function("return " + a)();
+        document.getElementById('history').value = c;
         document.getElementById('main').value = '';
         b = Math.round((b + Number.EPSILON) * 100000) / 100000;
         
         document.getElementById('main').value = b;
 
-        document.getElementById('history')
+        
     }
     catch{
         errormessage();
