@@ -7,15 +7,20 @@ body
 header{
     display: flex;
     justify-content: center;
-    background-color: aqua;
+    background-color: rgb(51, 51, 51);
     margin:none;
     justify-self: center;
+    border: none;
+    outline: none;  
 }
 
 .hinput{
     height: 4vh;
     width: 100%;
     font-size: 25px;
+    border-radius: 0px 0px 40px 40px;
+    border: none;
+    outline: none;
 }
 
 
@@ -29,6 +34,8 @@ header{
 }
 
 .main{
+    border: none;
+    outline: none;
     height: 25vh;
     width: 100%;
     background-color: rgb(51, 51, 51);
@@ -38,6 +45,8 @@ header{
     /* text-overflow: ; */
     overflow:scroll; 
     color: aliceblue;
+    padding-top: none;
+    border: none;
 }
 
 .main:focus{
@@ -58,7 +67,7 @@ header{
     border-radius: 10vw 10vw 0 0;
     display: flex;
     justify-content: center;
-    padding: 10% 0%;
+    padding: 0% 0%;
 
 
 }

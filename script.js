@@ -75,6 +75,8 @@ function result(){
         b = Math.round((b + Number.EPSILON) * 100000) / 100000;
         
         document.getElementById('main').value = b;
+
+        document.getElementById('history')
     }
     catch{
         errormessage();
