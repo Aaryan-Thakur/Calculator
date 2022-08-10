@@ -1,10 +1,20 @@
-const numbers = getElementsByClassName('number');
 
-for(let i=0; i < input.length; i++)
-number[i].addEventListener('click',()=>{
-    number='1';
+for(let i=0; i < 11; i++)
+document.getElementsByClassName('number')[i].addEventListener('click',()=>{
+    a = document.getElementsByClassName('number')[i].innerHTML;
+    number(a);
+
 })
 
+document.getElementById('clean').addEventListener('click',()=>{
+    clean();
+})
+
+for(let i=0; i < 4; i++)
+document.getElementsByClassName('operator')[i].addEventListener('click',()=>{
+    a= document.getElementsByClassName('operator')[i].innerHTML;
+    operator(a);
+})
 
 
 
@@ -17,18 +27,10 @@ function number(a) {
     
 }
 
-// randomv = document.getElementById('n');
-// console.log(randomv);
-// document.getElementById('n').addEventListener('click',()=>{
-//     console.log("N is Clicked");
-// })
-
-
 function operator(a)
 {
     string = document.getElementById('main').value;
     lastc = string.slice(string.length - 1);
-    console.log(lastc);
 
     if(a=='-'){
         if(lastc == 'x'||lastc == '/'){
@@ -55,9 +57,7 @@ async function errormessage(){
     document.getElementById("main").value='Error: Enter a valid input';
     document.getElementById("main").style.fontSize='7vw';
 
-    console.log(a);
     await delay(2000);
-    console.log(a);
     
     document.getElementById("main").style.fontSize=b;
     document.getElementById("main").value = a;
