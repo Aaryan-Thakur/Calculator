@@ -1,5 +1,5 @@
 
-for(let i=0; i < 11; i++)
+for(let i=0; i < 13; i++)
 document.getElementsByClassName('number')[i].addEventListener('click',()=>{
     a = document.getElementsByClassName('number')[i].innerHTML;
     number(a);
@@ -53,14 +53,11 @@ function delay(milliseconds){
 async function errormessage(){
 
     a = document.getElementById("main").value;
-    b = document.getElementById("main").style.fontSize;
 
     document.getElementById("main").value='Error: Enter a valid input';
-    document.getElementById("main").style.fontSize='7vw';
 
     await delay(2000);
     
-    document.getElementById("main").style.fontSize=b;
     document.getElementById("main").value = a;
     
     

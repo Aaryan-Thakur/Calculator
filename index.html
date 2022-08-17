@@ -5,6 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/bf0c287894.js" crossorigin="anonymous"></script>
         <title>Calculator</title>
     </head>
     <body>
@@ -24,11 +25,11 @@
         <section class="keypad">
             <div class="grid-container">
                 
-                <button class="grid-item" id="NDmode">N</button>
+                <button class="grid-item number" id="OB">(</button>
+                
+                <button class="grid-item number" id="CB">)</button>
                 
                 <button class="grid-item" id="clean">C</button>
-                
-                <button class="grid-item" id="sign">+-</button>
                 
                 
                 <button class="grid-item operator" id="division">/</button>
@@ -56,7 +57,7 @@
                 
                 <button class="grid-item number" id="decimal">.</button>
                 
-                <button onclick="backspace()" class="grid-item" id="backspace">B</button>
+                <button onclick="backspace()" class="grid-item" id="backspace"><img id='bimg' src="static/backspace.svg"></button>
 
                 <button onclick="result()" class="grid-item" id="result">=</button>
                 
